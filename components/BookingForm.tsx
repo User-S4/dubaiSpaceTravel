@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from '@/types/react-import-fix';
 import { motion } from 'framer-motion';
 import { FaRocket, FaCalendarAlt, FaUserAstronaut, FaCheck } from 'react-icons/fa';
 
@@ -26,7 +26,7 @@ const destinations = [
   {
     id: 'lunar-gateway',
     name: 'Lunar Gateway Hotel',
-    image: '/images/destinations/lunar-gateway.jpg',
+    image: '/images/destinations/lunar-gateway.svg',
     description: 'Stay at the first hotel in lunar orbit with exclusive moon surface excursions.',
     price: 250000,
     duration: '10 days',

@@ -9,38 +9,35 @@ import { FaRocket, FaCalendarAlt, FaClock, FaUser, FaEllipsisV } from 'react-ico
 interface Trip {
   id: string;
   destination: string;
-  destinationId: string;
-  image: string;
   departureDate: string;
-  status: 'upcoming' | 'in-progress' | 'completed' | 'cancelled';
-  daysRemaining: number;
+  returnDate: string;
+  status: string;
+  seatClass: string;
+  accommodation: string;
+  price: number;
 }
 
-// Mock data - in a real app this would come from an API
-const mockTrips: Trip[] = [
-  {
-    id: 'trip-1',
-    destination: 'Orbital Luxury Station',
-    destinationId: 'orbital-station',
-    image: '/images/destinations/orbital-station.jpg',
-    departureDate: '2025-06-15',
-    status: 'upcoming',
-    daysRemaining: 65
-  },
-  {
-    id: 'trip-2',
-    destination: 'Lunar Gateway Hotel',
-    destinationId: 'lunar-gateway',
-    image: '/images/destinations/lunar-gateway.jpg',
-    departureDate: '2025-09-22',
-    status: 'upcoming',
-    daysRemaining: 163
-  }
-];
+// Convert the passed trip data to the format needed for display
+const formatTrip = (trip: Trip) => {
+  const departureDate = new Date(trip.departureDate);
+  const now = new Date();
+  const daysRemaining = Math.ceil((departureDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+  
+  return {
+    ...trip,
+    destinationId: trip.destination.toLowerCase().replace(/\s+/g, '-'),
+    image: `/images/destinations/${trip.destination.toLowerCase().replace(/\s+/g, '-')}.jpg`,
+    daysRemaining: daysRemaining > 0 ? daysRemaining : 0
+  };
+};
 
-const UpcomingTrips = () => {
-  const [trips] = useState<Trip[]>(mockTrips);
+interface UpcomingTripsProps {
+  trips: Trip[];
+}
+
+const UpcomingTrips = ({ trips }: UpcomingTripsProps) => {
   const [activeTrip, setActiveTrip] = useState<string | null>(null);
+  const formattedTrips = trips.map(formatTrip);
 
   const toggleTripMenu = (tripId: string) => {
     setActiveTrip(activeTrip === tripId ? null : tripId);
@@ -54,15 +51,15 @@ const UpcomingTrips = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-semibold">Your Upcoming Trips</h2>
+        <h2 className="text-xl font-semibold">Your Trips</h2>
         <Link href="/dashboard/trips" className="text-dubai-gold text-sm hover:underline">
           View All
         </Link>
       </div>
       
-      {trips.length > 0 ? (
+      {formattedTrips.length > 0 ? (
         <div className="space-y-4">
-          {trips.map((trip) => (
+          {formattedTrips.map((trip) => (
             <motion.div 
               key={trip.id}
               className="bg-space-dark/50 rounded-lg overflow-hidden border border-white/10"
@@ -105,7 +102,7 @@ const UpcomingTrips = () => {
                   <div className="mt-2 grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
                     <div className="flex items-center text-space-light">
                       <FaCalendarAlt className="mr-2 text-dubai-gold" />
-                      {trip.departureDate}
+                      {new Date(trip.departureDate).toLocaleDateString()}
                     </div>
                     <div className="flex items-center text-space-light">
                       <FaClock className="mr-2 text-dubai-gold" />
@@ -117,7 +114,7 @@ const UpcomingTrips = () => {
                     </div>
                     <div className="flex items-center text-space-light">
                       <FaUser className="mr-2 text-dubai-gold" />
-                      1 Traveler
+                      {trip.seatClass}
                     </div>
                   </div>
                   
@@ -143,7 +140,7 @@ const UpcomingTrips = () => {
       ) : (
         <div className="flex flex-col items-center justify-center py-10 text-center">
           <FaRocket size={40} className="text-space-light mb-4" />
-          <h3 className="text-lg font-medium mb-2">No upcoming trips</h3>
+          <h3 className="text-lg font-medium mb-2">No trips</h3>
           <p className="text-space-light mb-4">You don't have any trips scheduled yet.</p>
           <Link 
             href="/destinations" 

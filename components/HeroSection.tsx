@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from '@/types/react-import-fix';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -18,13 +18,13 @@ const HeroSection = () => {
   
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
-      {/* Background Video or Image */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-space-dark/70 to-space-dark z-10" />
         <div 
-          className="absolute inset-0 bg-[url('/images/space-hero.jpg')] bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1974')",
+            backgroundImage: "url('/images/space-hero.svg')",
           }}
         />
       </div>
@@ -123,7 +123,7 @@ const HeroSection = () => {
               <div className="absolute -top-20 -left-20 w-40 h-40 bg-dubai-gold/20 rounded-full filter blur-3xl"></div>
               <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-space-accent/10 rounded-full filter blur-3xl"></div>
               <Image
-                src="https://images.unsplash.com/photo-1614726365891-7b7915108b72?q=80&w=1974"
+                src="/images/space-hero.svg"
                 alt="Space shuttle launching from Dubai"
                 width={650}
                 height={500}

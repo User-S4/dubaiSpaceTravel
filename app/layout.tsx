@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Exo_2, Space_Mono } from 'next/font/google';
 import './globals.css';
+import ClientEntryReset from './client-entry-reset';
 
 const exo = Exo_2({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${exo.variable} ${spaceMono.variable}`}>
       <body className="bg-space-dark text-space-white min-h-screen">
+        <ClientEntryReset />
         {children}
       </body>
     </html>

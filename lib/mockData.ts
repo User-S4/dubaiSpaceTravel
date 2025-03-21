@@ -29,7 +29,7 @@ export const destinations = [
   {
     id: 'lunar-gateway',
     name: 'Lunar Gateway Hotel',
-    image: '/images/destinations/lunar-gateway.jpg',
+    image: '/images/destinations/lunar-gateway.svg',
     description: 'Stay at the first hotel in lunar orbit with exclusive moon surface excursions.',
     longDescription: `
       The Lunar Gateway Hotel orbits just 100 kilometers above the lunar surface, providing spectacular 
@@ -207,7 +207,7 @@ export const testimonials = [
     id: "1",
     name: "Ahmed Al Falasi",
     role: "CEO, Tech Innovators Ltd",
-    image: "/images/testimonials/ahmed.jpg",
+    image: "/images/testimonials/ahmed.svg",
     content: "The Mars Base One experience exceeded all expectations. The pre-flight training was comprehensive, and the staff made sure we were prepared for every aspect of the journey. Watching the Earth from such a distance was humbling and life-changing.",
     rating: 5,
     trip: "Mars Base One Expedition"
@@ -216,7 +216,7 @@ export const testimonials = [
     id: "2",
     name: "Sophie Chen",
     role: "Astrophysicist",
-    image: "/images/testimonials/sophie.jpg",
+    image: "/images/testimonials/sophie.svg",
     content: "As a scientist, I was thrilled by the educational aspects of the Venus Flyby. The team ensured we had optimal viewing positions during key moments. The on-board lectures added tremendous value to the experience.",
     rating: 5,
     trip: "Venus Flyby Experience"
@@ -225,7 +225,7 @@ export const testimonials = [
     id: "3",
     name: "Jamal Ibrahim",
     role: "Adventure Blogger",
-    image: "/images/testimonials/jamal.jpg",
+    image: "/images/testimonials/jamal.svg",
     content: "The Lunar Gateway Hotel offers unparalleled luxury in space. The Earth-rise view from my suite was breathtaking, and the zero-gravity spa treatments were innovative and relaxing. Worth every dirham!",
     rating: 4,
     trip: "Lunar Gateway Hotel Stay"
@@ -234,7 +234,7 @@ export const testimonials = [
     id: "4",
     name: "Priya Sharma",
     role: "Travel Influencer",
-    image: "/images/testimonials/priya.jpg",
+    image: "/images/testimonials/priya.svg",
     content: "My week at the Orbital Luxury Station was the most unique travel experience of my career. The attention to detail is impressive, from the gourmet meals to the thoughtfully designed living spaces. The views are simply indescribable.",
     rating: 5,
     trip: "Orbital Luxury Station"
@@ -243,7 +243,7 @@ export const testimonials = [
     id: "5",
     name: "Michael Rodriguez",
     role: "Retired Astronaut",
-    image: "/images/testimonials/michael.jpg",
+    image: "/images/testimonials/michael.svg",
     content: "Even with my background in space travel, Dubai Space Travel managed to create an experience that surprised and delighted me. Their commitment to both safety and luxury is unmatched in the private space tourism industry.",
     rating: 5,
     trip: "Asteroid Mining Operation"

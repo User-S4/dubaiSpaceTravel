@@ -1,0 +1,28 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0A1128" />
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="150" r="90" fill="#1A2036" stroke="#D4AF37" stroke-width="2" />
+  
+  <!-- Silhouette (Female) -->
+  <circle cx="150" cy="110" r="40" fill="#334155" />
+  <path d="M110 190 C110 160, 190 160, 190 190 L190 210 C190 240, 110 240, 110 210 Z" fill="#334155" />
+  
+  <!-- Decorative elements -->
+  <circle cx="120" cy="105" r="3" fill="#D4AF37" />
+  <circle cx="180" cy="105" r="3" fill="#D4AF37" />
+  
+  <!-- Abstract design - influencer themed elements -->
+  <path d="M100 50 Q150 70 200 50" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.8" />
+  <path d="M100 60 Q150 80 200 60" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.6" />
+  <path d="M100 70 Q150 90 200 70" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.4" />
+  
+  <!-- Social media icon -->
+  <circle cx="100" cy="40" r="8" fill="#D4AF37" opacity="0.7" />
+  <circle cx="200" cy="40" r="8" fill="#D4AF37" opacity="0.7" />
+  
+  <!-- Name and title -->
+  <text x="150" y="250" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Priya Sharma</text>
+  <text x="150" y="270" font-family="Arial" font-size="10" fill="#D4AF37" text-anchor="middle">Travel Influencer</text>
+</svg> 

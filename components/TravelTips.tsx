@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from '@/types/react-import-fix';
 import { motion } from 'framer-motion';
 import { FaLightbulb, FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 
@@ -50,7 +50,11 @@ const tips: Tip[] = [
   }
 ];
 
-const TravelTips = () => {
+interface TravelTipsProps {
+  destination?: string;
+}
+
+const TravelTips: React.FC<TravelTipsProps> = ({ destination }) => {
   const [currentTipIndex, setCurrentTipIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   

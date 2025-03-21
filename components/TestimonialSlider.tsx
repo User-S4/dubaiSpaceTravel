@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from '@/types/react-import-fix';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaStar, FaChevronLeft, FaChevronRight, FaQuoteLeft } from 'react-icons/fa';

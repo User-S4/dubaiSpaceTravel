@@ -19,8 +19,8 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-pattern': "url('/images/space-hero.jpg')",
-        'stars-pattern': "url('/images/stars-bg.png')",
+        'hero-pattern': "url('/images/space-hero.svg')",
+        'stars-pattern': "url('/images/stars-bg.svg')",
       },
     },
   },

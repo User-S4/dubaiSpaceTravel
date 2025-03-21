@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from '@/types/react-import-fix';
 import { motion } from 'framer-motion';
 import { FaRocket, FaCalendarAlt } from 'react-icons/fa';
 
 interface CountdownTimerProps {
-  targetDate?: string; // ISO date string
+  targetDate: Date | string; // Accept both Date and string
   title?: string;
   subtitle?: string;
 }
@@ -24,7 +24,12 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = new Date(targetDate).getTime() - new Date().getTime();
+      // Convert to Date if it's a string
+      const targetTime = typeof targetDate === 'string' 
+        ? new Date(targetDate).getTime()
+        : targetDate.getTime();
+      
+      const difference = targetTime - new Date().getTime();
       
       if (difference > 0) {
         setTimeLeft({

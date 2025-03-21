@@ -14,6 +14,7 @@ declare module 'next/link' {
     children?: ReactNode;
     href: string;
     className?: string;
+    key?: string;
   }
   
   const Link: FC<LinkProps>;

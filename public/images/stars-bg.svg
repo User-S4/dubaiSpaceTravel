@@ -1,0 +1,66 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0A1128"/>
+  
+  <!-- Generate 200 random stars with different opacities and sizes -->
+  <g>
+    <circle cx="105" cy="32" r="1" fill="white" opacity="0.8"/>
+    <circle cx="234" cy="543" r="1.2" fill="white" opacity="0.7"/>
+    <circle cx="567" cy="234" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="789" cy="654" r="1" fill="white" opacity="0.9"/>
+    <circle cx="456" cy="345" r="1.3" fill="white" opacity="0.6"/>
+    <circle cx="123" cy="321" r="1" fill="white" opacity="0.7"/>
+    <circle cx="876" cy="123" r="1.2" fill="white" opacity="0.8"/>
+    <circle cx="345" cy="765" r="1" fill="white" opacity="0.9"/>
+    <circle cx="987" cy="432" r="1.4" fill="white" opacity="0.6"/>
+    <circle cx="432" cy="98" r="1" fill="white" opacity="0.7"/>
+    <circle cx="765" cy="543" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="210" cy="432" r="1" fill="white" opacity="0.9"/>
+    <circle cx="543" cy="123" r="1.2" fill="white" opacity="0.7"/>
+    <circle cx="876" cy="321" r="1" fill="white" opacity="0.6"/>
+    <circle cx="321" cy="654" r="1.3" fill="white" opacity="0.8"/>
+    <circle cx="654" cy="234" r="1" fill="white" opacity="0.9"/>
+    <circle cx="98" cy="345" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="432" cy="765" r="1" fill="white" opacity="0.7"/>
+    <circle cx="765" cy="123" r="1.2" fill="white" opacity="0.9"/>
+    <circle cx="210" cy="321" r="1" fill="white" opacity="0.6"/>
+    <circle cx="543" cy="654" r="1.4" fill="white" opacity="0.8"/>
+    <circle cx="876" cy="234" r="1" fill="white" opacity="0.7"/>
+    <circle cx="321" cy="345" r="1.3" fill="white" opacity="0.9"/>
+    <circle cx="654" cy="765" r="1" fill="white" opacity="0.6"/>
+    <circle cx="98" cy="432" r="1.5" fill="white" opacity="0.7"/>
+    <circle cx="432" cy="123" r="1" fill="white" opacity="0.8"/>
+    <circle cx="765" cy="321" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="210" cy="654" r="1" fill="white" opacity="0.9"/>
+    <circle cx="543" cy="234" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="876" cy="345" r="1" fill="white" opacity="0.8"/>
+    <circle cx="321" cy="765" r="1.4" fill="white" opacity="0.6"/>
+    <circle cx="654" cy="432" r="1" fill="white" opacity="0.9"/>
+    <circle cx="98" cy="123" r="1.5" fill="white" opacity="0.7"/>
+    <circle cx="432" cy="321" r="1" fill="white" opacity="0.6"/>
+    <circle cx="765" cy="654" r="1.2" fill="white" opacity="0.8"/>
+    <circle cx="210" cy="234" r="1" fill="white" opacity="0.9"/>
+    <circle cx="543" cy="345" r="1.3" fill="white" opacity="0.6"/>
+    <circle cx="876" cy="765" r="1" fill="white" opacity="0.7"/>
+    <circle cx="321" cy="432" r="1.5" fill="white" opacity="0.9"/>
+    <circle cx="654" cy="123" r="1" fill="white" opacity="0.6"/>
+    
+    <!-- Larger brighter stars -->
+    <circle cx="200" cy="200" r="2" fill="white" opacity="1"/>
+    <circle cx="800" cy="500" r="2.2" fill="white" opacity="0.9"/>
+    <circle cx="500" cy="700" r="2.5" fill="white" opacity="1"/>
+    <circle cx="1000" cy="300" r="2" fill="white" opacity="0.9"/>
+    <circle cx="300" cy="100" r="2.3" fill="white" opacity="1"/>
+    <circle cx="900" cy="600" r="2" fill="white" opacity="0.9"/>
+    <circle cx="600" cy="400" r="2.2" fill="white" opacity="1"/>
+    <circle cx="100" cy="700" r="2" fill="white" opacity="0.9"/>
+    <circle cx="700" cy="200" r="2.4" fill="white" opacity="1"/>
+    <circle cx="400" cy="500" r="2" fill="white" opacity="0.9"/>
+    
+    <!-- A few golden stars (Dubai theme) -->
+    <circle cx="600" cy="200" r="2" fill="#D4AF37" opacity="0.8"/>
+    <circle cx="300" cy="500" r="2.2" fill="#D4AF37" opacity="0.7"/>
+    <circle cx="900" cy="700" r="2.5" fill="#D4AF37" opacity="0.8"/>
+    <circle cx="400" cy="300" r="2" fill="#D4AF37" opacity="0.7"/>
+    <circle cx="700" cy="600" r="2.3" fill="#D4AF37" opacity="0.8"/>
+  </g>
+</svg> 

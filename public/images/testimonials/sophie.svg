@@ -1,0 +1,30 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0A1128" />
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="150" r="90" fill="#1A2036" stroke="#D4AF37" stroke-width="2" />
+  
+  <!-- Silhouette (Female) -->
+  <circle cx="150" cy="110" r="40" fill="#334155" />
+  <path d="M110 190 C110 160, 190 160, 190 190 L190 210 C190 240, 110 240, 110 210 Z" fill="#334155" />
+  
+  <!-- Decorative elements -->
+  <circle cx="120" cy="105" r="3" fill="#D4AF37" />
+  <circle cx="180" cy="105" r="3" fill="#D4AF37" />
+  
+  <!-- Abstract design - astronomy-themed for the astrophysicist -->
+  <circle cx="80" cy="70" r="5" fill="#D4AF37" opacity="0.7" />
+  <circle cx="220" cy="70" r="5" fill="#D4AF37" opacity="0.7" />
+  <path d="M80 70 L220 70" stroke="#D4AF37" stroke-width="1" opacity="0.5" />
+  
+  <!-- Small stars -->
+  <circle cx="60" cy="50" r="2" fill="white" />
+  <circle cx="240" cy="50" r="2" fill="white" />
+  <circle cx="100" cy="30" r="1.5" fill="white" />
+  <circle cx="200" cy="30" r="1.5" fill="white" />
+  
+  <!-- Name and title -->
+  <text x="150" y="250" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Sophie Chen</text>
+  <text x="150" y="270" font-family="Arial" font-size="10" fill="#D4AF37" text-anchor="middle">Astrophysicist</text>
+</svg> 

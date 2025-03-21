@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from '@/types/react-import-fix';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
