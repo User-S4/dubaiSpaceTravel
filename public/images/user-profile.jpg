@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0A1128" />
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="150" r="130" fill="#1C2541" stroke="#D4AF37" stroke-width="4" />
+  
+  <!-- Silhouette -->
+  <g>
+    <!-- Head -->
+    <circle cx="150" cy="120" r="50" fill="#3A506B" />
+    
+    <!-- Body -->
+    <path d="M80,280 C80,200 220,200 220,280" fill="#3A506B" />
+    
+    <!-- Traditional headwear suggestion (subtle) -->
+    <path d="M100,100 Q150,60 200,100" stroke="#D4AF37" stroke-width="4" fill="none" />
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g>
+    <!-- Abstract Gold Design Elements -->
+    <circle cx="150" cy="150" r="110" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="5,5" />
+    <circle cx="150" cy="150" r="120" fill="none" stroke="#D4AF37" stroke-width="0.5" />
+    
+    <!-- Star accents -->
+    <path d="M60,60 L65,75 L80,75 L70,85 L75,100 L60,90 L45,100 L50,85 L40,75 L55,75 Z" fill="#D4AF37" opacity="0.3" />
+    <path d="M230,70 L235,85 L250,85 L240,95 L245,110 L230,100 L215,110 L220,95 L210,85 L225,85 Z" fill="#D4AF37" opacity="0.2" />
+  </g>
+</svg> 
