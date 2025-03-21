@@ -1,0 +1,80 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050a24" />
+      <stop offset="50%" stop-color="#0A1128" />
+      <stop offset="100%" stop-color="#001233" />
+    </linearGradient>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background with stars -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)" />
+  
+  <!-- Earth silhouette at bottom -->
+  <path d="M0,1080 C480,900 1440,900 1920,1080 L1920,1080 L0,1080 Z" fill="#001233" />
+  
+  <!-- City skyline silhouette with Dubai elements (Burj Khalifa etc) -->
+  <path d="M0,1080 L0,980 L120,970 L180,950 L240,970 L300,930 L360,960 L420,920 
+           L480,950 L540,910 L600,940 L660,900 L720,930 L780,890 L840,920 
+           L900,900 L960,880 L960,800 L960,880 L1020,900 L1080,880 L1140,900 
+           L1200,890 L1260,910 L1320,890 L1380,920 L1440,890 L1500,930 L1560,880 
+           L1620,920 L1680,900 L1740,950 L1800,920 L1860,960 L1920,930 L1920,1080 Z" 
+        fill="#000820" opacity="0.7" />
+  
+  <!-- The prominent Burj Khalifa in the middle -->
+  <polygon points="960,800 940,880 980,880" fill="#000820" />
+  
+  <!-- Golden Dubai accent lighting on buildings -->
+  <rect x="900" y="870" width="120" height="5" fill="#D4AF37" opacity="0.6" />
+  <rect x="300" y="940" width="80" height="3" fill="#D4AF37" opacity="0.6" />
+  <rect x="700" y="920" width="60" height="3" fill="#D4AF37" opacity="0.6" />
+  <rect x="1200" y="900" width="100" height="4" fill="#D4AF37" opacity="0.6" />
+  <rect x="1500" y="940" width="70" height="3" fill="#D4AF37" opacity="0.6" />
+  
+  <!-- Larger stars -->
+  <g>
+    <circle cx="200" cy="200" r="3" fill="white" opacity="0.9" filter="url(#glow)" />
+    <circle cx="700" cy="300" r="2.5" fill="white" opacity="0.8" filter="url(#glow)" />
+    <circle cx="1200" cy="250" r="3.5" fill="white" opacity="0.9" filter="url(#glow)" />
+    <circle cx="1700" cy="350" r="2.8" fill="white" opacity="0.8" filter="url(#glow)" />
+    <circle cx="300" cy="500" r="3.2" fill="white" opacity="0.9" filter="url(#glow)" />
+    <circle cx="900" cy="150" r="2.7" fill="white" opacity="0.8" filter="url(#glow)" />
+    <circle cx="1500" cy="500" r="3" fill="white" opacity="0.9" filter="url(#glow)" />
+    <circle cx="1300" cy="600" r="2.5" fill="white" opacity="0.8" filter="url(#glow)" />
+    <circle cx="500" cy="300" r="3.2" fill="white" opacity="0.9" filter="url(#glow)" />
+    <circle cx="1600" cy="200" r="2.7" fill="white" opacity="0.8" filter="url(#glow)" />
+    
+    <!-- Golden "Dubai" stars -->
+    <circle cx="960" cy="120" r="5" fill="#D4AF37" opacity="0.9" filter="url(#glow)" />
+    <circle cx="400" cy="150" r="4" fill="#D4AF37" opacity="0.8" filter="url(#glow)" />
+    <circle cx="1600" cy="350" r="4.5" fill="#D4AF37" opacity="0.9" filter="url(#glow)" />
+  </g>
+  
+  <!-- Many small stars -->
+  <g>
+    <circle cx="100" cy="50" r="1" fill="white" opacity="0.7" />
+    <circle cx="300" cy="120" r="1.2" fill="white" opacity="0.6" />
+    <circle cx="500" cy="80" r="1" fill="white" opacity="0.8" />
+    <circle cx="700" cy="180" r="1.2" fill="white" opacity="0.7" />
+    <circle cx="900" cy="60" r="1" fill="white" opacity="0.6" />
+    <circle cx="1100" cy="140" r="1.2" fill="white" opacity="0.8" />
+    <circle cx="1300" cy="100" r="1" fill="white" opacity="0.7" />
+    <circle cx="1500" cy="160" r="1.2" fill="white" opacity="0.6" />
+    <circle cx="1700" cy="80" r="1" fill="white" opacity="0.8" />
+    <circle cx="1900" cy="120" r="1.2" fill="white" opacity="0.7" />
+    <!-- Add many more small stars here... -->
+  </g>
+  
+  <!-- Subtle spacecraft silhouette -->
+  <g transform="translate(400,300) rotate(-30)">
+    <ellipse cx="0" cy="0" rx="60" ry="15" fill="#0A1128" stroke="#D4AF37" stroke-width="1" opacity="0.8" />
+    <rect x="-25" y="-20" width="50" height="40" fill="#0A1128" stroke="#D4AF37" stroke-width="1" opacity="0.8" />
+    <polygon points="0,-40 15,-20 -15,-20" fill="#0A1128" stroke="#D4AF37" stroke-width="1" opacity="0.8" />
+  </g>
+</svg> 

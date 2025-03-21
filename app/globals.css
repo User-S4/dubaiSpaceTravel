@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-gradient-to-b from-space-dark to-space-blue;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-semibold transition-all duration-300 inline-flex items-center justify-center;
+  }
+  
+  .btn-primary {
+    @apply btn bg-space-accent text-white hover:bg-space-accent/90;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-dubai-gold text-space-dark hover:bg-dubai-gold/90;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-space-accent text-space-accent hover:bg-space-accent/10;
+  }
+  
+  .card {
+    @apply bg-space-blue/60 backdrop-blur-md rounded-xl p-6 border border-space-light/10;
+  }
+  
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-lg rounded-xl border border-white/10;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .gold-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+  }
+} 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0A1128" />
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="140" r="80" fill="#1C2541" stroke="#E6C026" stroke-width="2" />
+  
+  <!-- Silhouette -->
+  <g fill="#3A506B">
+    <!-- Head -->
+    <circle cx="150" cy="110" r="40" />
+    <!-- Body -->
+    <path d="M120 150 Q150 200 180 150 L180 200 L120 200 Z" />
+    <!-- Beard -->
+    <path d="M130 125 Q150 160 170 125" stroke="#3A506B" stroke-width="8" fill="none" />
+  </g>
+  
+  <!-- Camera for Adventure Blogger -->
+  <g transform="translate(190, 110)">
+    <rect x="-15" y="-10" width="30" height="20" fill="#E6C026" rx="2" />
+    <circle cx="0" cy="0" r="8" fill="#0A1128" stroke="#E6C026" stroke-width="2" />
+    <rect x="-15" y="-15" width="10" height="5" fill="#E6C026" />
+  </g>
+  
+  <!-- Decorative Elements - Stars -->
+  <g fill="#E6C026">
+    <circle cx="60" cy="40" r="3" />
+    <circle cx="240" cy="50" r="2" />
+    <circle cx="80" cy="250" r="4" />
+    <circle cx="230" cy="260" r="3" />
+  </g>
+  
+  <!-- Name Label -->
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">Jamal Ibrahim</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="12" fill="#E6C026" text-anchor="middle">Adventure Blogger</text>
+  
+  <!-- Blog Icon -->
+  <g transform="translate(90, 70)">
+    <rect x="-15" y="-15" width="30" height="30" rx="5" fill="none" stroke="#E6C026" stroke-width="1.5" />
+    <line x1="-10" y1="-5" x2="10" y2="-5" stroke="#E6C026" stroke-width="1.5" />
+    <line x1="-10" y1="0" x2="5" y2="0" stroke="#E6C026" stroke-width="1.5" />
+    <line x1="-10" y1="5" x2="8" y2="5" stroke="#E6C026" stroke-width="1.5" />
+  </g>
+</svg> 

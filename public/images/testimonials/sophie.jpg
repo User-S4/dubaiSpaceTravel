@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0A1128" />
+  
+  <!-- Profile Circle -->
+  <circle cx="150" cy="140" r="80" fill="#1C2541" stroke="#E6C026" stroke-width="2" />
+  
+  <!-- Silhouette -->
+  <g fill="#3A506B">
+    <!-- Head -->
+    <circle cx="150" cy="110" r="40" />
+    <!-- Hair -->
+    <path d="M110 110 Q150 40 190 110" fill="#3A506B" />
+    <!-- Body -->
+    <path d="M120 150 Q150 200 180 150 L180 200 L120 200 Z" />
+  </g>
+  
+  <!-- Decorative Elements - Stars -->
+  <g fill="#E6C026">
+    <circle cx="50" cy="30" r="3" />
+    <circle cx="250" cy="40" r="2" />
+    <circle cx="70" cy="260" r="4" />
+    <circle cx="230" cy="270" r="3" />
+  </g>
+  
+  <!-- Name Label -->
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">Sophie Chen</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="12" fill="#E6C026" text-anchor="middle">Astrophysicist</text>
+  
+  <!-- Astronomy Element -->
+  <g transform="translate(210, 70)">
+    <circle cx="0" cy="0" r="10" fill="#E6C026" />
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#E6C026" stroke-width="1" stroke-dasharray="2,2" />
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#E6C026" stroke-width="1" stroke-dasharray="1,3" />
+  </g>
+</svg> 
